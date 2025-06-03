@@ -37,8 +37,7 @@ function CsvPlotUploader() {
     formData.append('csv_file', selectedFile);
 
     try {
-      const backendUrl = '/api/upload-csv'
-      
+      const backendUrl = 'https://prueba-backend-tan.vercel.app/api/upload-csv'; // ¡IMPORTANTE: Usa la URL COMPLETA de tu backend!      
       const res = await fetch(backendUrl, {
         method: 'POST',
         body: formData,
